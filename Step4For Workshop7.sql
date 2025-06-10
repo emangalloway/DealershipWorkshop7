@@ -30,6 +30,14 @@ JOIN Vehicles v ON i.VIN = v.VIN
 JOIN Dealership d ON i.DealershipID = d.DealershipID
 WHERE v.VehicleType = "Car";
 
+-- Question 6
+SELECT s.contractId,s.VIN,v.make,v.model,v.color,d.dealershipname,d.address,d.phone,v.price
+FROM Salescontracts s
+JOIN Inventory i ON s.VIN = i.VIN
+JOIN Dealership d ON i.DealershipID = d.dealershipID
+JOIN Vehicles v ON s.VIN = v.VIN
+WHERE SaleDate Like "%2025%";
+
 
 
 
