@@ -16,6 +16,13 @@ SELECT v.make,v.model,v.year,v.color,v.price
 FROM Vehicles v
 WHERE VIN = "1FAFP404X1F234567";
 
+-- Quesion 4
+SELECT i.VIN,v.make,v.model,v.year,v.Color,v.price,d.DealershipName
+FROM Inventory i
+JOIN Vehicles v ON i.VIN = v.VIN
+JOIN Dealership d ON i.DealershipID = d.DealershipID
+WHERE v.make = "Ferrari";
+
 
 
 
