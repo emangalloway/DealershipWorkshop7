@@ -3,10 +3,13 @@ DROP DATABASE IF EXISTS GallowayAuto;
 CREATE DATABASE GallowayAuto;
 
 USE GallowayAuto;
+DROP TABLE IF EXISTS Inventory;
+DROP TABLE IF EXISTS Dealership;
+USE GallowayAuto;
 
 CREATE TABLE Dealership (
 DealershipID INT AUTO_INCREMENT PRIMARY KEY,
-Name VARCHAR(50),
+DealershipName VARCHAR(50),
 Address VARCHAR(50),
 Phone VARCHAR(12)
 );
@@ -47,7 +50,7 @@ MonthlyPayment DECIMAL(10.2),
 FOREIGN KEY (VIN) REFERENCES Vehicles(VIN)
 );
 
-INSERT INTO Dealership (DealershipID,Name,Address,Phone)
+INSERT INTO Dealership (DealershipID,DealershipName,Address,Phone)
 VALUES
 (1,"E's Audi","1112 North Leon St, SweetFeet, TX","112-212-3213"),
 (2,"LoneStart Ford","12242 West Coyote Blvd, SweetFeet Texas","813-232-1111");
