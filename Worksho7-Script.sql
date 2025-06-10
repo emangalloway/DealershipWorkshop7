@@ -59,12 +59,19 @@ INSERT INTO Vehicles (VIN,Make,Model,Year,SOLD ,Color,VehicleType,Odometer,Price
 VALUES
 ('1HGCM82633A004352',"Ford","Raptor",2025,FALSE,"Black","Truck",0,120000.00),
 ('1FAFP404X1F234567',"Porche","911 Turbo S",2024,FALSE,"Forest Green","Car",4,270000.00),
-('WBA8E9G50GNU12345',"Cadillac","Escalade V",2025,FALSE,"Diamond Black","SUV",5,180000.00);
+('WBA8E9G50GNU12345',"Cadillac","Escalade V",2025,FALSE,"Diamond Black","SUV",5,180000.00),
+('234GT9G50GNU12345',"Cadillac","CT5 V",2025,FALSE,"Diamond Black","Car",3,105000.00),
+('876TN9G50GNU12345',"Ferrari","812 SuperFast",2025,FALSE,"Ferrari Red","Car",0,400000.00),
+('POL089G50GNU12345',"Porche","Cayenne GTS",2025,FALSE,"Diamond Black","SUV",5,135000.00);
 
 INSERT INTO Inventory (DealershipID,VIN)
 VALUES
 (1,'1HGCM82633A004352'),
-(2,'WBA8E9G50GNU12345');
+(2,'WBA8E9G50GNU12345'),
+(1,'1FAFP404X1F234567'),
+(1,'POL089G50GNU12345'),
+(2,'234GT9G50GNU12345'),
+(1,'876TN9G50GNU12345');
 
 INSERT INTO SalesContracts(ContractID,VIN,SaleDate,Price)
 VALUES
