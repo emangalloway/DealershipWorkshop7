@@ -23,6 +23,13 @@ JOIN Vehicles v ON i.VIN = v.VIN
 JOIN Dealership d ON i.DealershipID = d.DealershipID
 WHERE v.make = "Ferrari";
 
+-- Question 5
+SELECT v.make,v.model,v.year,v.Color,v.VehicleType,v.price,d.DealershipName,d.address,d.phone
+FROM Inventory i
+JOIN Vehicles v ON i.VIN = v.VIN
+JOIN Dealership d ON i.DealershipID = d.DealershipID
+WHERE v.VehicleType = "Car";
+
 
 
 
